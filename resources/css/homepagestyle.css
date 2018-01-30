@@ -1,0 +1,367 @@
+/*general*/
+body{
+  font-family: helvetica;
+  font-size: 18px;
+};
+
+h3 {
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 2rem;
+}
+
+
+
+/*header*/
+
+header {
+  width: 50%;
+  position: fixed; right: 0;
+  float: right;
+  background-color: white;
+  z-index: 5;
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.navbar-header a {
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+  color: black;
+  }
+
+.navbar-header span{
+  font-family: helvetica;
+  font-size: 2rem;
+  color: black;
+}
+
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.navbar-nav{
+  display: flex;
+  flex-flow: column;
+}
+
+.hidden-nav {
+  display: none;
+  height: 50rem;
+}
+
+
+
+/*humberger menu*/
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+ li a {
+  color: black;
+}
+
+/*hover dropdown*/
+ul{
+    width: 16.67rem;
+    position: relative;
+    float: right;
+    right: 0;
+    top: 0;
+}
+.nav{
+    left: 0;
+}
+li ul{
+    display: none;
+}
+
+@media only screen and (min-width:768px ) and (max-width: 991px){
+  header {
+    width: 60%;
+  }
+
+}
+
+  @media only screen and (max-width: 768px){
+    header {
+      width: 100%;
+    }
+
+  }
+
+
+
+/*jumbotron*/
+
+/*background-image is a placeholder until we get the final one with the right backgroung color */
+/*Also need help embedding the background images locally throughout*/
+.jumbotron-fluid {
+  background-image: url('https://lh6.googleusercontent.com/kM6sAH5Mfreck_yPqEeLLSVrMvgva9x_8Aif9x5rsiOesvdZ25ue3GcBqB3FgewC_hGsKtKJ2gSzRZXL0v-C=w1600-h794-rw');
+  height: 48rem;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #a4a3a8
+}
+
+.jumbotron h1 {
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 4.35rem;
+}
+
+.jumbotron h2 {
+  font-family: helvetica;
+  color: white;
+  margin-top: 0;
+}
+
+/*overview*/
+#overview .text {
+  margin: 1rem;
+  font-family: Roboto Condensed;
+}
+
+#overview h2 {
+  color: white;
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+  padding-top: 7rem;
+}
+
+#overview h3 {
+  color: black;
+}
+
+#overview p {
+  line-height: 2rem;
+  color: black;
+  padding: 0.5rem;
+
+}
+
+#overview h1 {
+  font-family: Roboto Condensed;
+  font-size: 3.35rem;
+  padding: 4rem 0;
+}
+
+#overview .profile {
+  background-color: #d9d9db;
+  height: 77rem;
+}
+
+.imagebox-overview {
+  height: 17rem;
+  margin: 1rem 0;
+}
+
+.PracticeAreas {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem 0;
+  transition: all .5s;
+  height: 100%;
+  background-color: rgba(46, 49, 53, 0.75);
+
+}
+
+.imagebox-overview #commercial {
+  background-image: url('https://lh5.googleusercontent.com/7dpM8hXHxSK0qhlHWQyY4KB_Q6kE-945dkrjGLmTQy142EWM_FXw7BI2E7LkEPigQCFpqRwe6L0uDmE5XyqP=w1600-h745-rw');
+}
+
+.imagebox-overview #property {
+  background-image: url('https://lh6.googleusercontent.com/3A7FlPZhr2qLmJmPtGe8RcVZwUVQC_-R2szgYUp_aUPaPQEN02bT73ndKNoqFBi2iW8wWsY3VA9oPXQUKARx=w1600-h745');
+}
+
+.imagebox-overview #banking {
+  background-image: url('https://lh4.googleusercontent.com/YhnRg2OwEKVY5_NuIWyIIeqy37jeMpn8A7ICRSrazpU5fu8xm1AF2BS2AxE-FDGqERRifVV-980twzJS_MMC=w1600-h745');
+}
+
+.imagebox-overview #employment {
+  background-image: url('https://lh3.googleusercontent.com/_qf6_SxxPYOvTvjJp8IjrHO8i3ZidyauxsB1kHNEBr2NYqhXum7qIcOIsysk5FB23i1zCZZdSXp4wPa20VJV=w1600-h745');
+}
+
+.imagebox-overview #intellectual-property {
+  background-image: url('https://lh4.googleusercontent.com/TVPY_kqX5LtUgfSsAehPtLCyaOJAYrUqSrOXpaSdGi0zHjZbEcVCAUNU1tx2dGIOppgZIm_Hm81diKnaK2v4=w1600-h745');
+}
+
+.imagebox-overview #estates {
+  background-image: url('https://lh6.googleusercontent.com/Cftbfdxx1oaqjtp6VaqIc4mxc-7HPGXov1sQQGy1f-cNfhCbhQrVuyxOs1NM408NnzadxHh-nqKc9Oe08tSC=w1600-h745-rw');
+}
+
+.imagebox-overview #sports {
+  background-image: url('https://lh6.googleusercontent.com/pGb0J_vMAu-n29NCLJfbrJTDyP1VIN3nGH8AgVjC4NtS1siZQpDCa9daXR34q6gSMbvBhjlK2PtmU-4gD_4E=w1600-h745-rw');
+}
+
+.imagebox-overview:hover .PracticeAreas,
+.imagebox-overview:focus .PracticeAreas {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 991px){
+  .text .left-col {
+    display: none;
+  }
+
+  }
+
+
+/*About*/
+
+#About .row {
+  background-color: whitesmoke;
+  margin: 2rem 0;
+}
+
+#About {
+  margin-bottom: 2rem;
+}
+
+#About h3 {
+  padding-top: 15rem;
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 2rem;
+}
+
+.imagebox {
+  height: 30rem;
+
+}
+
+.Team {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .5s;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+}
+
+.imagebox #Partners {
+  background-image: url('https://lh4.googleusercontent.com/Wpykm9t1AbueQUB9ODlI52PNtHtgLoaec03S-T6MxxsFUndvuRGcghVv7Q-i57-64-cxz0BfWAeMUL0F8UGj=w1600-h794-rw');
+}
+
+.imagebox #Areas {
+  background-image: url('https://lh3.googleusercontent.com/jmQ2xKxYejy26Ifo-cDkTDcQ_5HQ4U7oWV1RrmPAg7FWP3o7K_8D3jhFT3CbnQr_mLobGW_MZhQiOS-fMF-Z=w1600-h794-rw');
+
+}
+
+.imagebox #difference {
+  background-image: url('https://lh4.googleusercontent.com/jIMLy8bRmufcqaai7aeE1kLDPAihT8NxsJQJ9F_orcJVGOgBiC-QxGp1vwho-BONhujbVv_W6BxRr1o40D6e=w1600-h794-rw');
+
+}
+
+
+.imagebox:hover .Team,
+.imagebox:focus .Team {
+  transform: scale(1.1);
+
+}
+
+.Team::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 49, 53, 0.75);
+}
+
+.imagebox:hover .Team:before,
+.imagebox:focus .Team:before {
+  display: block;
+}
+
+
+/*contact*/
+#contact {
+  background-color: #272725;
+  color: white;
+
+}
+
+#contact h2 {
+  padding: 2rem 0;
+}
+
+#contact h4 {
+  padding: 0.5rem 0;
+}
+
+.row #contact-form {
+  margin-top: 2rem;
+}
+
+.form input {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  border: none;
+  margin-right: 5px;
+  background: rgba(255, 255, 255, .85);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+  color: #473e39;
+}
+
+
+.form #message {
+  height: 180px;
+  margin-bottom: 2rem;
+}
+
+/*footer*/
+footer {
+  border-top: solid white 1px;
+  background-color: #272725;
+  color: white;
+  height: 4rem;
+}
+
+footer .row {
+  padding-left: 4rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
