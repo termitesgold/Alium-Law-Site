@@ -1,0 +1,269 @@
+/*general*/
+body{
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+h3 {
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 2rem;
+}
+
+
+
+/*header*/
+
+header {
+  width: 50%;
+  position: fixed; right: 0;
+  float: right;
+  background-color: white;
+  z-index: 5;
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.navbar-header a {
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+  color: black;
+  }
+
+.navbar-header span{
+  font-family: helvetica;
+  font-size: 2rem;
+  color: black;
+}
+
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.navbar-nav{
+  display: flex;
+  flex-flow: column;
+}
+
+.hidden-nav {
+  display: none;
+  height: 50rem;
+}
+
+
+
+/*humberger menu*/
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+ li a {
+  color: black;
+}
+
+/*hover dropdown*/
+ul{
+    width: 16.67rem;
+    position: relative;
+    float: right;
+    right: 0;
+    top: 0;
+}
+.nav{
+    left: 0;
+}
+li ul{
+    display: none;
+}
+
+@media only screen and (min-width:768px ) and (max-width: 991px){
+  header {
+    width: 60%;
+  }
+
+}
+
+  @media only screen and (max-width: 768px){
+    header {
+      width: 100%;
+    }
+
+  }
+
+
+
+/*jumbotron*/
+
+.jumbotron-fluid {
+  height: 24rem;
+  background-color: #a4a3a8
+}
+
+.jumbotron .textbox {
+  margin: 4rem 0;
+}
+
+.jumbotron h2,
+.jumbotron p {
+  font-family: helvetica;
+  color: black;
+}
+
+.jumbotron p {
+  font-size: 1rem;
+}
+
+.jumbotron h1 {
+  font-family: Roboto Condensed;
+  color: black;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+
+.jumbotron img {
+  width: 10%;
+  float: right;
+  margin-right: 20rem;
+  margin-top: 1rem;
+}
+
+/*fix logos responsiveness*/
+
+@media only screen and (max-width: 1024px){
+  .jumbotron img{
+    margin-right: 10rem;
+    width: 20%;
+  }
+
+}
+
+/*contact section*/
+.contactbox {
+  background-color: #d9d9db;
+  height: 25rem;
+}
+
+.Contact::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 49, 53, 0.75);
+}
+
+.contactbox:hover .Contact:before,
+.contactbox:focus .Contact:before {
+  display: block;
+}
+
+
+.contactbox {
+  color: black;
+
+}
+
+.contactbox h2 {
+  padding: 2rem 0;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+.contactbox h4 {
+  padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 991px){
+   #logo {
+    display: none;
+  }
+
+  }
+
+.row .text-center {
+  margin-top: 2rem;
+}
+
+#contact {
+  background-color: #272725;
+
+}
+
+
+
+.form input {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  border: none;
+  margin-right: 5px;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, .85);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+  color: #473e39;
+}
+
+
+.form #message {
+  height: 180px;
+  margin-bottom: 2rem;
+}
+
+/*map*/
+.row #map {
+  height: 50rem;
+
+}
+
+
+/*footer*/
+footer {
+  border-top: solid white 1px;
+  background-color: #272725;
+  color: white;
+  height: 4rem;
+}
+
+footer .row {
+  padding-left: 4rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
