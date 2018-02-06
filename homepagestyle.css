@@ -59,13 +59,6 @@ header .container {
   height: 50rem;
 }
 
-/*.rightMenu {
-    position:relative;
-    float:right;
-	top:0;
-	left:100%;
-}*/
-
 .rightMenu {
     position:absolute;
     float:right;
@@ -73,7 +66,7 @@ header .container {
     left: 160px;
 }
 
-/*humberger menu*/
+/*humbuger menu*/
 .hamburger {
     display: inline-block;
     cursor: pointer;
